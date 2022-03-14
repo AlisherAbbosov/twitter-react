@@ -1,0 +1,16 @@
+.pages {
+  padding: 0;
+}
+
+.heading {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: solid 1px #d8d8d8;
+  &__title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    color: #000000;
+  }
+}

@@ -1,0 +1,13 @@
+.buttons {
+  background: #1d9bf0;
+  border-radius: 27.5px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  border: none;
+  padding: 15px 90px;
+  color: #ffffff;
+  &.new-tweet {
+    padding: 15px 30px;
+  }
+}

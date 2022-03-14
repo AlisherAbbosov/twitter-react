@@ -1,0 +1,30 @@
+.menu {
+  padding: 31px 15px;
+  text-align: start;
+  border-right: solid 1px #e5e5e5;
+
+  &__list {
+    display: flex;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 30px;
+    &-icons {
+      margin-right: 20px;
+    }
+  }
+  &__item {
+    display: flex;
+    align-items: center;
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+  &__link {
+    color: #000000;
+  }
+  &__icon {
+    margin-bottom: 51px;
+  }
+}

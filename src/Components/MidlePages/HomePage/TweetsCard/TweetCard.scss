@@ -1,0 +1,64 @@
+.tweet__card {
+  padding: 30px 25px 20px;
+  border-bottom: solid 1px #d8d8d8;
+  display: flex;
+
+  &-user-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+  }
+  &-img {
+    margin-right: 15px;
+  }
+
+  &-list {
+    list-style: none;
+    display: flex;
+    max-width: 558px;
+    padding: 0;
+    justify-content: space-between;
+  }
+
+  &-icons {
+    margin-right: 10px;
+  }
+  &-icon-num {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    text-decoration: none;
+    color: #536471;
+  }
+}
+
+.user {
+  &__name {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 27px;
+    text-decoration: none;
+    color: #000000;
+    margin: 0;
+    margin-right: 5px;
+
+    &-username {
+      font-weight: 400;
+      font-size: 17px;
+      line-height: 24px;
+      color: #000000;
+      margin-right: 5px;
+      opacity: 0.6;
+    }
+  }
+  &__data {
+    &-text {
+      margin-bottom: 22px;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 24px;
+
+      color: #000000;
+    }
+  }
+}
