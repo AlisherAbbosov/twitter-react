@@ -1,15 +1,17 @@
 import InfoImg from "../../../../Assets/Images/profile.jpg";
 import UserImgBig from "../../../../Assets/Images/user-img-big.png";
 import { LinkIcon, BornIcon, JoinedIcon } from "../../../Lib/Icons/Icons";
-
+import { Context as LangContext } from "../../../../Content/Localization";
 import React from "react";
 import { Context } from "../../../../Content/Theme";
 
 import { Routes, Route, NavLink } from "react-router-dom";
 import Tweets from "../Tweets/Tweets";
+import languages from "../../../../Localization/languages";
 
 const ProfileInfo = () => {
   const { state } = React.useContext(Context);
+  const { lang } = React.useContext(LangContext);
   return (
     <div className="profile__info">
       <img className="profile__info-top-img" src={InfoImg} alt="info" />
@@ -103,10 +105,12 @@ const ProfileInfo = () => {
         </ul>
         <div className="profile__info-follow">
           <p>
-            <span className="profile__info-following">67</span> Following
+            <span className="profile__info-following">67</span>{" "}
+            {languages[lang].profilePage.userFollowing}
           </p>
           <p>
-            <span className="profile__info-followers">47</span>Followers
+            <span className="profile__info-followers">47</span>{" "}
+            {languages[lang].profilePage.userFollowers}
           </p>
         </div>
 

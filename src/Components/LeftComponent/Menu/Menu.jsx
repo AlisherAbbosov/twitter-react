@@ -1,23 +1,15 @@
 import React from "react";
 import "./Menu.scss";
 import SiteLogo from "../../../Components/Lib/Icons/logo.png";
-import {
-  HomeIcon,
-  ExploreIcon,
-  NotificationIcon,
-  MessagesIcon,
-  BookmarksIcon,
-  ListsIcon,
-  ProfileIcon,
-  MoreIcon,
-} from "../../Lib/Icons/Icons";
+import languages from "../../../Localization/languages";
 import Buttons from "../../Buttons/Buttons";
 import { Route, Routes, NavLink } from "react-router-dom";
 import { Context } from "../../../Content/Theme";
+import { Context as LangContext } from "../../../Content/Localization";
 
 const Menu = () => {
   const { state } = React.useContext(Context);
-
+  const { lang } = React.useContext(LangContext);
   return (
     <div className="menu">
       <div className="menu__icon">
@@ -50,7 +42,7 @@ const Menu = () => {
                   d="M8.415 11.954a4.415 4.415 0 004.41 4.41 4.415 4.415 0 004.41-4.41 4.415 4.415 0 00-4.41-4.41 4.415 4.415 0 00-4.41 4.41zm7.07 0a2.662 2.662 0 01-2.66 2.66 2.662 2.662 0 01-2.66-2.66 2.662 2.662 0 012.66-2.66 2.662 2.662 0 012.66 2.66z"
                 ></path>
               </svg>
-              Home
+              {languages[lang].menu.home}
             </NavLink>
           </li>
           <li className="menu__item">
@@ -81,7 +73,7 @@ const Menu = () => {
                   ></path>
                 </g>
               </svg>
-              Explore
+              {languages[lang].menu.explore}
             </NavLink>
           </li>
           <li className="menu__item">
@@ -115,7 +107,7 @@ const Menu = () => {
                   ></path>
                 </g>
               </svg>
-              Notifications
+              {languages[lang].menu.notifications}
             </NavLink>
           </li>
           <li className="menu__item">
@@ -146,7 +138,7 @@ const Menu = () => {
                   ></path>
                 </g>
               </svg>
-              Messages
+              {languages[lang].menu.messages}
             </NavLink>
           </li>
           <li className="menu__item">
@@ -177,7 +169,7 @@ const Menu = () => {
                   ></path>
                 </g>
               </svg>
-              Bookmarks
+              {languages[lang].menu.bookmarks}
             </NavLink>
           </li>
           <li className="menu__item">
@@ -199,7 +191,7 @@ const Menu = () => {
                   d="M16.75 9.268h-10a.75.75 0 010-1.5h10a.75.75 0 110 1.5zm0 4.11h-10a.75.75 0 010-1.5h10a.75.75 0 010 1.5zm-5 4.11h-5a.75.75 0 110-1.5h5a.75.75 0 010 1.5z"
                 ></path>
               </svg>
-              Lists
+              {languages[lang].menu.lists}
             </NavLink>
           </li>
           <li className="menu__item">
@@ -230,7 +222,7 @@ const Menu = () => {
                   ></path>
                 </g>
               </svg>
-              Profile
+              {languages[lang].menu.profile}
             </NavLink>
           </li>
           <li className="menu__item">
@@ -262,11 +254,11 @@ const Menu = () => {
                   <path d="M13.708 27.018c-6.916 0-12.541-5.626-12.541-12.542 0-6.916 5.625-12.541 12.541-12.541S26.25 7.56 26.25 14.476s-5.626 12.542-12.542 12.542zm0-23.333c-5.95 0-10.791 4.841-10.791 10.791s4.841 10.792 10.791 10.792S24.5 20.426 24.5 14.476 19.658 3.685 13.708 3.685z"></path>
                 </g>
               </svg>
-              More
+              {languages[lang].menu.more}
             </NavLink>
           </li>
         </ul>
-        <Buttons text="Tweet" variant="menu-btn" />
+        <Buttons text={languages[lang].menu.menuBtn} variant="menu-btn" />
       </nav>
     </div>
   );

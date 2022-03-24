@@ -1,11 +1,14 @@
 import React from "react";
 import { Button } from "@mui/material";
 import { Context } from "../../../../Content/Theme";
+import languages from "../../../../Localization/languages";
 import { Context as TokenContext } from "../../../../Content/Authentication";
+import { Context as LangContext } from "../../../../Content/Localization";
 import { useNavigate } from "react-router-dom";
 
 const ProfileHeader = () => {
   const { state } = React.useContext(Context);
+  const { lang } = React.useContext(LangContext);
   const { token, setToken } = React.useContext(TokenContext);
   console.log(token);
   const navigate = useNavigate();
@@ -42,7 +45,7 @@ const ProfileHeader = () => {
         className="profile__header-logout--btn"
         variant="outlined"
       >
-        logout
+        {languages[lang].profilePage.headingLogoutBtn}
       </Button>
       {/* <button className="profile__header-logout--btn">Logout</button> */}
     </div>
