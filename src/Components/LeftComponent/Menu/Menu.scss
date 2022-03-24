@@ -1,10 +1,9 @@
 .menu {
-  padding: 31px 15px;
-  text-align: start;
-  border-right: solid 1px #e5e5e5;
-
+  margin-bottom: 260px;
   &__list {
     display: flex;
+    flex-direction: column;
+    padding: 0;
     font-style: normal;
     font-weight: 700;
     font-size: 18px;
@@ -21,9 +20,7 @@
       margin-bottom: 30px;
     }
   }
-  &__link {
-    color: #000000;
-  }
+
   &__icon {
     margin-bottom: 51px;
   }

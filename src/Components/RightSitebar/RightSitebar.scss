@@ -1,6 +1,6 @@
 .right__sitebar {
   border-left: solid 1px #d8d8d8;
-  padding: 20px 170px 0 28px;
+  padding: 20px 28px;
 }
 
 .search {
@@ -8,7 +8,6 @@
   margin-bottom: 20px;
   &__input {
     padding: 15px 64px;
-    background: #eff3f4;
     border-radius: 31px;
     font-weight: 400;
     font-size: 18px;
@@ -27,7 +26,6 @@
 }
 
 .trends {
-  background: #f7f9f9;
   border-radius: 10px;
   padding: 20px 15px;
   margin-bottom: 20px;
@@ -41,39 +39,35 @@
       font-size: 24px;
       line-height: 32px;
       flex-wrap: nowrap;
-      color: #000000;
-      // margin-right: 151px;
     }
   }
 }
 
 .trend {
   margin-bottom: 15px;
+
   &__location {
     font-weight: 400;
     font-size: 16px;
     line-height: 21px;
-    color: #393b41;
     opacity: 0.6;
   }
   &__title {
     font-weight: 600;
     font-size: 20px;
     line-height: 27px;
-    color: #000000;
   }
   &__tweets {
     font-weight: 400;
     font-size: 16px;
     line-height: 21px;
-    color: #393b41;
+
     opacity: 0.6;
   }
 }
 
 .mightlike {
   width: 373px;
-  background: #f7f9f9;
   border-radius: 10px;
   padding: 20px 15px;
   margin-bottom: 30px;
@@ -81,7 +75,7 @@
     font-weight: 700;
     font-size: 24px;
     line-height: 32px;
-    color: #000000;
+
     margin-bottom: 25px;
   }
 }
@@ -98,14 +92,12 @@
     font-weight: 600;
     font-size: 18px;
     line-height: 24px;
-    color: #000000;
     margin-bottom: 1px;
   }
   &__username {
     font-weight: 400;
     font-size: 18px;
     line-height: 24px;
-    color: #000000;
     opacity: 0.6;
     margin-right: 36px;
   }

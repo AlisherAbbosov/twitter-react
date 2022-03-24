@@ -1,6 +1,8 @@
 import "./HomePage.scss";
 import UserImg from "../../../Assets/Images/user-img.png";
 import Buttons from "../../Buttons/Buttons";
+import { Context } from "../../../Content/Theme";
+
 import {
   ImageIcon,
   GifIcon,
@@ -8,7 +10,9 @@ import {
   SmileIcon,
   ScheduleIcon,
 } from "../../Lib/Icons/Icons";
+import React from "react";
 const NewTweet = () => {
+  const { state } = React.useContext(Context);
   return (
     <div className="new__tweet">
       <div>
@@ -17,7 +21,7 @@ const NewTweet = () => {
 
       <div className="new__tweet-data">
         <textarea
-          className="new__tweet-textarea"
+          className={`new__tweet-textarea theme__` + state}
           rows={3}
           cols={35}
           placeholder="What’s happening"

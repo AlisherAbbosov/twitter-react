@@ -1,19 +1,19 @@
 import React from "react";
 import "./App.scss";
-import Menu from "./Components/Menu/Menu";
-import MidlePages from "./Components/MidlePages/MidlePages";
-import RightSitebar from "./Components/RightSitebar/RightSitebar";
+import AuthenticatedApp from "./AuthenticatedApp";
+import UnauthenticatedApp from "./UnauthenticatedApp";
+
+import { Context } from "./Content/Authentication";
 
 function App() {
-  return (
-    <div className="App container">
-      <div className="row">
-        <Menu />
-        <MidlePages />
-        <RightSitebar />
-      </div>
-    </div>
-  );
+  const { token, setToken } = React.useContext(Context);
+
+  // console.log(token);
+  if (token) {
+    return <AuthenticatedApp />;
+  } else {
+    return <UnauthenticatedApp />;
+  }
 }
 
 export default App;

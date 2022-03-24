@@ -1,5 +1,6 @@
 .App {
-  font-weight: 700;
+  // font-weight: 700;
+  // color: #000000;
   color: #000000;
 }
 
@@ -10,4 +11,37 @@ p {
 
 a {
   text-decoration: none;
+  // color: #000000;
+}
+
+.menu__link {
+  &.active {
+    font-weight: bolder;
+  }
+}
+
+.authenticated {
+  display: flex;
+}
+
+.unauthenticated {
+  display: flex;
+  height: 100vh;
+}
+
+.theme__dark {
+  background-color: #15202b;
+  color: white;
+}
+.theme__light {
+  color: #000000;
+}
+
+.box__dark {
+  color: white;
+  background-color: #2c3641;
+}
+
+.box__light {
+  background: #f7f9f9;
 }

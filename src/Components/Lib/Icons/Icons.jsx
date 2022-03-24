@@ -16,6 +16,10 @@ import RetweetIcon from "../../Lib/Icons/TweetCard/retweet.svg";
 import LikeIcon from "../../Lib/Icons/TweetCard/like.svg";
 import ShareIcon from "../../Lib/Icons/TweetCard/share.svg";
 import StatisticsIcon from "../../Lib/Icons/TweetCard/statistics.svg";
+import LocateIcon from "../Icons/Profile/location.svg";
+import LinkIcon from "../Icons/Profile/link.svg";
+import BornIcon from "../Icons/Profile/born-day.svg";
+import JoinedIcon from "../Icons/Profile/joined.svg";
 
 export {
   HomeIcon,
@@ -36,4 +40,8 @@ export {
   LikeIcon,
   ShareIcon,
   StatisticsIcon,
+  LocateIcon,
+  LinkIcon,
+  BornIcon,
+  JoinedIcon,
 };

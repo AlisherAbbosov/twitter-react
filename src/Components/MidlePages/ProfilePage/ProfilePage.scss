@@ -1,0 +1,136 @@
+.profile {
+  &__header {
+    position: relative;
+    padding: 22px 31px 15px;
+    border-bottom: solid 1px #d8d8d8;
+    display: flex;
+    align-items: center;
+    &-back-icon {
+      margin-right: 40px;
+      cursor: pointer;
+    }
+    &-name {
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 27px;
+      margin-bottom: 2px;
+    }
+    &-tweets {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 21px;
+
+      opacity: 0.6;
+    }
+
+    &-logout--btn {
+      left: 420px;
+      position: absolute;
+    }
+  }
+
+  &__info {
+    &-top {
+      position: relative;
+      padding: 20px 25px 0;
+      border-bottom: solid 1px #e5e5e5;
+    }
+    &-top-img {
+      width: 723px;
+    }
+    &-user-img {
+      position: absolute;
+      top: -80px;
+    }
+    &-texts {
+      margin-top: 65px;
+    }
+    &-name {
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 32px;
+      margin-bottom: 0;
+      // color: #000000;
+    }
+    &-username {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 21px;
+      // color: #000000;
+      opacity: 0.6;
+      margin-bottom: 15px;
+    }
+    &-about {
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 24px;
+      // color: #000000;
+    }
+    &-list {
+      display: flex;
+      padding: 0;
+      justify-content: space-between;
+    }
+    &-item {
+      display: flex;
+      align-items: center;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 24px;
+      /* identical to box height */
+
+      // color: #000000;
+
+      opacity: 0.6;
+    }
+    &-follow {
+      justify-content: space-between;
+      width: 230px;
+      display: flex;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 24px;
+      // color: #000000;
+      opacity: 0.6;
+      margin-bottom: 40px;
+    }
+    &-following {
+      opacity: 1;
+      margin-right: 5px;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 24px;
+      // color: #000000;
+    }
+    &-followers {
+      opacity: 1;
+      margin-right: 5px;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 24px;
+      // color: #000000;
+    }
+
+    &-newlist {
+      list-style: none;
+      display: flex;
+      padding: 0;
+      margin: 19px;
+      justify-content: space-between;
+    }
+    &-newitem {
+      padding-bottom: 16px;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 24px;
+      // color: #000000;
+      &:hover {
+        color: #000000;
+      }
+      &.active {
+        border-bottom: 5px solid #1da1f2;
+        font-weight: bold;
+      }
+    }
+  }
+}

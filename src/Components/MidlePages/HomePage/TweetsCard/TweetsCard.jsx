@@ -1,5 +1,7 @@
 import "./TweetCard.scss";
-import UserImg from "../../../../Assets/Images/user-img2.png";
+import UserImg from "../../../../Assets/Images/user-img.png";
+import React from "react";
+import { Context } from "../../../../Content/Theme";
 import {
   CommentIcon,
   RetweetIcon,
@@ -9,6 +11,7 @@ import {
 } from "../../../Lib/Icons/Icons";
 
 const TweetsCard = ({ name, lastSeen, userName, text }) => {
+  const { state } = React.useContext(Context);
   return (
     <div className="tweet__card">
       <div className="tweet__card-img">
@@ -17,8 +20,8 @@ const TweetsCard = ({ name, lastSeen, userName, text }) => {
 
       <div className="tweet__card-data">
         <div className="tweet__card-user-info">
-          <a className="user__name" href="#link">
-            <h4 className="user__name">{name}</h4>
+          <a className={`user__name theme__` + state} href="#link">
+            <h4 className={`user__name theme__` + state}>{name}</h4>
           </a>
           <p className="user__name-username">{userName}</p>
           <span className="user__name-username">·</span>

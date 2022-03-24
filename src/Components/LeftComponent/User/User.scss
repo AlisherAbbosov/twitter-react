@@ -1,0 +1,22 @@
+.user {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+  &__img {
+    margin-right: 13px;
+  }
+  &__name {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 1px;
+  }
+  &__username {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    opacity: 0.6;
+    margin-right: 36px;
+  }
+}
