@@ -1,7 +1,9 @@
 import "./HomePage.scss";
 import UserImg from "../../../Assets/Images/user-img.png";
 import Buttons from "../../Buttons/Buttons";
+import languages from "../../../Localization/languages";
 import { Context } from "../../../Content/Theme";
+import { Context as LangContext } from "../../../Content/Localization";
 
 import {
   ImageIcon,
@@ -13,6 +15,7 @@ import {
 import React from "react";
 const NewTweet = () => {
   const { state } = React.useContext(Context);
+  const { lang } = React.useContext(LangContext);
   return (
     <div className="new__tweet">
       <div>
@@ -24,7 +27,7 @@ const NewTweet = () => {
           className={`new__tweet-textarea theme__` + state}
           rows={3}
           cols={35}
-          placeholder="What’s happening"
+          placeholder={languages[lang].homePage.newTweetPlaseholder}
         ></textarea>
 
         <ul className="new__tweet-icon--list">
@@ -55,7 +58,10 @@ const NewTweet = () => {
           </li>
         </ul>
         <div className="new__tweet-button">
-          <Buttons text="Tweet" variant="new-tweet" />
+          <Buttons
+            text={languages[lang].homePage.newTweetBtn}
+            variant="new-tweet"
+          />
         </div>
       </div>
     </div>

@@ -1,10 +1,13 @@
 import UserImg from "../../../Assets/Images/user-img.png";
 import Buttons from "../../Buttons/Buttons";
 import { Context } from "../../../Content/Theme";
+import { Context as LangContext } from "../../../Content/Localization";
 import React from "react";
+import languages from "../../../Localization/languages";
 
 const Likers = ({ UserFirstName, UserName }) => {
   const { state } = React.useContext(Context);
+  const { lang } = React.useContext(LangContext);
   return (
     <div className="likers">
       <img className="likers__img" src={UserImg} alt="user img" />
@@ -14,7 +17,7 @@ const Likers = ({ UserFirstName, UserName }) => {
       </div>
       <div className="likers__btn">
         <Buttons
-          text={"Follow"}
+          text={languages[lang].youMightLike.likeBtn}
           variant={`follow ${state == "dark" ? "dark" : ""}`}
         />
       </div>

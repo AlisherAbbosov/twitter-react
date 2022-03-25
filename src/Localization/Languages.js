@@ -23,7 +23,7 @@ const languages = {
       trendsTitle: "Trends for you",
       trendsLocation: "Trending in Germany",
       trendTitle: "Revolution",
-      trendTweets: "Tweets",
+      trendTweets: "K Tweets",
     },
     youMightLike: {
       mightTitle: "You might like",

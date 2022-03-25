@@ -2,6 +2,7 @@ import "./MidlePages.scss";
 import React from "react";
 import CustomizeIcon from "../Lib/Icons/Customize.svg";
 import { Context as LangContext } from "../../Content/Localization";
+import languages from "../../Localization/languages";
 import { Context as ThemeContext } from "../../Content/Theme";
 import { FormControl, InputLabel, Select, MenuItem } from "@mui/material";
 
@@ -10,7 +11,9 @@ const MidleHeading = () => {
   const { state, setState } = React.useContext(ThemeContext);
   return (
     <div className="heading">
-      <h2 className="heding__title">Home</h2>
+      <h2 className="heading__title">
+        {languages[lang].homePage.headingTitle}
+      </h2>
       <div className="heading__selects">
         <FormControl
           // className="box__dark"

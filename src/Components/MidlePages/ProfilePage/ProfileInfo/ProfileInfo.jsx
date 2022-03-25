@@ -117,25 +117,25 @@ const ProfileInfo = () => {
         <ul className="profile__info-newlist">
           <li>
             <NavLink className="profile__info-newitem" to="/profile/tweets">
-              Tweets
+              {languages[lang].profilePage.tweets}
             </NavLink>
           </li>
 
           <li>
             <NavLink className="profile__info-newitem" to="/profile/replies">
-              Tweets & replies
+              {languages[lang].profilePage.replies}
             </NavLink>
           </li>
 
           <li>
             <NavLink className="profile__info-newitem" to="/profile/media">
-              Media
+              {languages[lang].profilePage.media}
             </NavLink>
           </li>
 
           <li>
             <NavLink className="profile__info-newitem" to="/profile/likes">
-              Likes
+              {languages[lang].profilePage.likes}
             </NavLink>
           </li>
         </ul>
