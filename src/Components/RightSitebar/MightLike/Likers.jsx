@@ -18,7 +18,7 @@ const Likers = ({ UserFirstName, UserName }) => {
       <div className="likers__btn">
         <Buttons
           text={languages[lang].youMightLike.likeBtn}
-          variant={`follow ${state == "dark" ? "dark" : ""}`}
+          variant={`follow ${state === "dark" ? "dark" : ""}`}
         />
       </div>
     </div>

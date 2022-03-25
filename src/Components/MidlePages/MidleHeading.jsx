@@ -4,7 +4,7 @@ import CustomizeIcon from "../Lib/Icons/Customize.svg";
 import { Context as LangContext } from "../../Content/Localization";
 import languages from "../../Localization/languages";
 import { Context as ThemeContext } from "../../Content/Theme";
-import { FormControl, InputLabel, Select, MenuItem } from "@mui/material";
+import { FormControl, Select, MenuItem } from "@mui/material";
 
 const MidleHeading = () => {
   const { lang, setLang } = React.useContext(LangContext);

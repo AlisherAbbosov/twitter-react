@@ -6,9 +6,8 @@ import UnauthenticatedApp from "./UnauthenticatedApp";
 import { Context } from "./Content/Authentication";
 
 function App() {
-  const { token, setToken } = React.useContext(Context);
+  const { token } = React.useContext(Context);
 
-  // console.log(token);
   if (token) {
     return <AuthenticatedApp />;
   } else {
