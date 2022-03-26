@@ -46,7 +46,7 @@ const Menu = () => {
             </NavLink>
           </li>
           <li className="menu__item">
-            <NavLink className={`menu__link theme__` + state} to={"/explore"}>
+            <NavLink className={`menu__link theme__` + state} to={"#link"}>
               <svg
                 className="menu__list-icons"
                 xmlns="http://www.w3.org/2000/svg"
@@ -77,10 +77,7 @@ const Menu = () => {
             </NavLink>
           </li>
           <li className="menu__item">
-            <NavLink
-              className={`menu__link theme__` + state}
-              to="/notifications"
-            >
+            <NavLink className={`menu__link theme__` + state} to="#link">
               <svg
                 className="menu__list-icons"
                 xmlns="http://www.w3.org/2000/svg"
@@ -111,7 +108,7 @@ const Menu = () => {
             </NavLink>
           </li>
           <li className="menu__item">
-            <NavLink className={`menu__link theme__` + state} to="/messages">
+            <NavLink className={`menu__link theme__` + state} to="#link">
               <svg
                 className="menu__list-icons"
                 xmlns="http://www.w3.org/2000/svg"
@@ -142,7 +139,7 @@ const Menu = () => {
             </NavLink>
           </li>
           <li className="menu__item">
-            <NavLink className={`menu__link theme__` + state} to="/bookmarks">
+            <NavLink className={`menu__link theme__` + state} to="#link">
               <svg
                 className="menu__list-icons"
                 xmlns="http://www.w3.org/2000/svg"
@@ -173,7 +170,7 @@ const Menu = () => {
             </NavLink>
           </li>
           <li className="menu__item">
-            <NavLink className={`menu__link theme__` + state} to="/lists">
+            <NavLink className={`menu__link theme__` + state} to="#link">
               <svg
                 className="menu__list-icons"
                 xmlns="http://www.w3.org/2000/svg"
@@ -226,7 +223,7 @@ const Menu = () => {
             </NavLink>
           </li>
           <li className="menu__item">
-            <NavLink className={`menu__link theme__` + state} to="/more">
+            <NavLink className={`menu__link theme__` + state} to="#link">
               <svg
                 className="menu__list-icons"
                 xmlns="http://www.w3.org/2000/svg"
