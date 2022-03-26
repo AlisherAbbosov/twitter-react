@@ -10,7 +10,6 @@ const ProfileHeader = () => {
   const { state } = React.useContext(Context);
   const { lang } = React.useContext(LangContext);
   const { token, setToken } = React.useContext(TokenContext);
-  console.log(token);
   const navigate = useNavigate();
 
   const Logout = () => {
