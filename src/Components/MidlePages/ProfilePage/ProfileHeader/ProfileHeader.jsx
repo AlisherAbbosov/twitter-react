@@ -1,7 +1,7 @@
 import React from "react";
 import { Button } from "@mui/material";
 import { Context } from "../../../../Content/Theme";
-import languages from "../../../../Localization/languages";
+import languages from "../../../../Localization/Languages";
 import { Context as TokenContext } from "../../../../Content/Authentication";
 import { Context as LangContext } from "../../../../Content/Localization";
 import { useNavigate, NavLink } from "react-router-dom";

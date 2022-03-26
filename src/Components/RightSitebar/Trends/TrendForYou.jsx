@@ -3,7 +3,7 @@ import Trends from "./Trends";
 import SettingsIcon from "../../Lib/Icons/settings.svg";
 import { Context } from "../../../Content/Theme";
 import { Context as LangContext } from "../../../Content/Localization";
-import languages from "../../../Localization/languages";
+import languages from "../../../Localization/Languages";
 
 const TrendForYou = () => {
   const { state } = React.useContext(Context);

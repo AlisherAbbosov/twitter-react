@@ -2,7 +2,7 @@ import React from "react";
 import { Context } from "../../../Content/Theme";
 import { Context as LangContext } from "../../../Content/Localization";
 import searchIcon from "../../Lib/Icons/search.svg";
-import languages from "../../../Localization/languages";
+import languages from "../../../Localization/Languages";
 
 const Input = () => {
   const { state } = React.useContext(Context);

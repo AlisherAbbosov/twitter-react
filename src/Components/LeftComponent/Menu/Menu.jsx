@@ -1,7 +1,7 @@
 import React from "react";
 import "./Menu.scss";
 import SiteLogo from "../../../Components/Lib/Icons/logo.png";
-import languages from "../../../Localization/languages";
+import languages from "../../../Localization/Languages";
 import Buttons from "../../Buttons/Buttons";
 import { NavLink } from "react-router-dom";
 import { Context } from "../../../Content/Theme";

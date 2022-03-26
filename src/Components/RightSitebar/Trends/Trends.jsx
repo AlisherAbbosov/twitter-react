@@ -1,6 +1,6 @@
 import React from "react";
 import { Context as LangContext } from "../../../Content/Localization";
-import languages from "../../../Localization/languages";
+import languages from "../../../Localization/Languages";
 
 const Trends = ({ tweets }) => {
   const { lang } = React.useContext(LangContext);

@@ -2,7 +2,7 @@ import "./MidlePages.scss";
 import React from "react";
 import CustomizeIcon from "../Lib/Icons/Customize.svg";
 import { Context as LangContext } from "../../Content/Localization";
-import languages from "../../Localization/languages";
+import languages from "../../Localization/Languages";
 import { Context as ThemeContext } from "../../Content/Theme";
 import { FormControl, Select, MenuItem } from "@mui/material";
 

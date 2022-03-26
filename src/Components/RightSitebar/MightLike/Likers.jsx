@@ -3,7 +3,7 @@ import Buttons from "../../Buttons/Buttons";
 import { Context } from "../../../Content/Theme";
 import { Context as LangContext } from "../../../Content/Localization";
 import React from "react";
-import languages from "../../../Localization/languages";
+import languages from "../../../Localization/Languages";
 
 const Likers = ({ UserFirstName, UserName }) => {
   const { state } = React.useContext(Context);

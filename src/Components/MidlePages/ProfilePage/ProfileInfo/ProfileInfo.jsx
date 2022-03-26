@@ -6,7 +6,7 @@ import { Context } from "../../../../Content/Theme";
 
 import { Routes, Route, NavLink } from "react-router-dom";
 import Tweets from "../Tweets/Tweets";
-import languages from "../../../../Localization/languages";
+import languages from "../../../../Localization/Languages";
 
 const ProfileInfo = () => {
   const { state } = React.useContext(Context);

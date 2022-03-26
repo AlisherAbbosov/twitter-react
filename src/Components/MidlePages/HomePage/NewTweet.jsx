@@ -1,7 +1,7 @@
 import "./HomePage.scss";
 import UserImg from "../../../Assets/Images/user-img.png";
 import Buttons from "../../Buttons/Buttons";
-import languages from "../../../Localization/languages";
+import languages from "../../../Localization/Languages";
 import { Context } from "../../../Content/Theme";
 import { Context as LangContext } from "../../../Content/Localization";
 

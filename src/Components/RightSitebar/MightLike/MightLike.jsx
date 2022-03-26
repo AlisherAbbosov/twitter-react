@@ -2,7 +2,7 @@ import Likers from "./Likers";
 import React from "react";
 import { Context } from "../../../Content/Theme";
 import { Context as LangContext } from "../../../Content/Localization";
-import languages from "../../../Localization/languages";
+import languages from "../../../Localization/Languages";
 
 const MightLike = () => {
   const { state } = React.useContext(Context);
