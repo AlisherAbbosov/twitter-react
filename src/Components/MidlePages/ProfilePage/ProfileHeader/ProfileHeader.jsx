@@ -9,7 +9,7 @@ import { useNavigate } from "react-router-dom";
 const ProfileHeader = () => {
   const { state } = React.useContext(Context);
   const { lang } = React.useContext(LangContext);
-  const { token, setToken } = React.useContext(TokenContext);
+  const { setToken } = React.useContext(TokenContext);
   const navigate = useNavigate();
 
   const Logout = () => {
@@ -18,7 +18,7 @@ const ProfileHeader = () => {
   };
   return (
     <div className="profile__header">
-      <a className="profile__header-back-icon" onClick={() => navigate(-1)}>
+      <a onClick={() => navigate(-1)} className="profile__header-back-icon">
         <svg
           width="21"
           height="16"
